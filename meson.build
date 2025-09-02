@@ -1,5 +1,7 @@
 project('ImGuizmo', 'cpp', version: '1.83', default_options : ['default_library=static'])
 
+add_project_arguments('--no-warnings', language: 'cpp')
+
 imguizmo_includes = include_directories('.')
 
 imgui_dep = dependency('imgui')
